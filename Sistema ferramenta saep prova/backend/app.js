@@ -4,5 +4,5 @@ const connection = require('./db');
 
 const server = express();
 
-server.user(cors());
-server.user(express.json());
+server.use(cors());
+server.use(express.json());
